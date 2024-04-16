@@ -10,7 +10,7 @@ npm i -D @iae/project-config eslint prettier
 
 ## Usage
 
-- Add the config preset into your `.eslintrc.js` file:
+- Add the config preset into your `.eslintrc.ts` file:
 
 ```javascript
 module.exports = {
@@ -18,27 +18,20 @@ module.exports = {
 };
 ```
 
-- Add a `prettier.config.js` file with contents:
+- Add a `prettier.config.ts` file with contents:
 
 ```javascript
 module.exports = require("@iae/project-config/prettier/prettier.config.js");
 ```
 
-- Update VSCode `settings` for autofix on save
+- Update VSCode `settings.json` for autofix on save
 
 ```json
 {
-  // ···
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-  // ···
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```

@@ -1,6 +1,6 @@
 {
   "name": "@iae/project-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom project config with defaults.",
   "author": "Haoyue",
   "main": "index.js",
