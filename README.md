@@ -1,2 +1,3 @@
 # project-config
-项目配置
+
+Custom project config with defaults.
