@@ -2,11 +2,9 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    browser: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['plugin:prettier/recommended'],
   ignorePatterns: ['**/node_modules/**', '{tmp,temp}/**', '**/*.min.js', 'dist/**', 'public/**'],
   overrides: [
     {
@@ -14,6 +12,6 @@ module.exports = {
       rules: {
         quotes: [2, 'double']
       }
-    },
-  ],
+    }
+  ]
 }
