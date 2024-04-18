@@ -9,6 +9,8 @@ module.exports = {
   arrowParens: 'avoid',
   // 在对象字面量的括号之间打印空格
   bracketSpacing: true,
+  // 将大括号放在同一行
+  bracketSameLine: true,
   // 句末使用分号
   semi: true,
   // 不对 Vue 组件中的 <script> 和 <style> 标签进行额外的缩进
